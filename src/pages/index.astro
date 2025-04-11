@@ -28,6 +28,47 @@ const metadata = {
 };
 ---
 
+<style>
+  /* Simple team card hover effects */
+  #team .bg-white.dark\:bg-slate-900.rounded-lg {
+    transition: all 0.3s ease;
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg img {
+    transition: transform 0.5s ease;
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover img {
+    transform: scale(1.05);
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover h3 {
+    color: var(--aw-color-primary, rgb(25, 118, 210));
+  }
+  
+  .dark #team .bg-white.dark\:bg-slate-900.rounded-lg:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 8px rgba(64, 150, 255, 0.5);
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover .flex a {
+    animation: bounce 1s ease infinite;
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover .flex a:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+</style>
+
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <section id="home" class="overflow-hidden bg-gradient-to-br from-slate-100 to-blue-50 dark:from-slate-900 dark:to-blue-950">
