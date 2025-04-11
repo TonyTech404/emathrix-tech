@@ -60,4 +60,45 @@ import '@fontsource-variable/inter';
       color: white;
     }
   }
+  
+  /* Team cards hover effects */
+  #team .bg-white.dark\:bg-slate-900.rounded-lg {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dark #team .bg-white.dark\:bg-slate-900.rounded-lg:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 0 8px rgba(64, 150, 255, 0.5);
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg img {
+    transition: transform 0.5s ease;
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover img {
+    transform: scale(1.05);
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover h3 {
+    color: var(--aw-color-primary);
+  }
+  
+  /* Social icons animation */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover .flex a {
+    animation: bounce 1s ease infinite;
+  }
+  
+  #team .bg-white.dark\:bg-slate-900.rounded-lg:hover .flex a:nth-child(2) {
+    animation-delay: 0.2s;
+  }
 </style>
