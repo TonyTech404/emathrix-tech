@@ -25,6 +25,10 @@ export default defineConfig({
   site: 'https://TonyTech404.github.io',
   base: '/emathrix-tech/',
   output: 'static',
+  trailingSlash: 'always',
+  build: {
+    assets: 'astro',
+  },
 
   integrations: [
     tailwind({

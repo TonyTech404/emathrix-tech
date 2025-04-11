@@ -5,4 +5,7 @@ import { getAsset } from '~/utils/permalinks';
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!-- Fix for GitHub Pages deployment - ensure all assets have correct path -->
+<base href="/emathrix-tech/" />
+
 <link rel="sitemap" href={getAsset('/sitemap-index.xml')} />
