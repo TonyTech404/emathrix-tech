@@ -46,10 +46,14 @@ export const getPermalink = (slug = '', type = 'page'): string => {
     slug.startsWith('https://') ||
     slug.startsWith('http://') ||
     slug.startsWith('://') ||
-    slug.startsWith('#') ||
     slug.startsWith('javascript:')
   ) {
     return slug;
+  }
+
+  // If it's a fragment identifier, we need to make sure it gets the base path
+  if (slug.startsWith('#')) {
+    return createPath(BASE_PATHNAME) + slug;
   }
 
   switch (type) {
