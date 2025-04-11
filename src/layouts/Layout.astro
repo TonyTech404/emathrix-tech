@@ -35,6 +35,9 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
+    
+    <!-- Team Animations CSS -->
+    <link rel="stylesheet" href="/team-animations.css" />
 
     <!-- Comment the line below to disable View Transitions -->
     <ClientRouter fallback="swap" />
@@ -44,5 +47,8 @@ const { language, textDirection } = I18N;
     <slot />
 
     <BasicScripts />
+    
+    <!-- Team Animations JavaScript -->
+    <script src="/team-animations.js"></script>
   </body>
 </html>
