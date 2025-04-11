@@ -5,19 +5,20 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact Emathrix Technologies',
+  description: 'Reach out to our team for software development services, technical consulting, or support for your existing solutions.'
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="Contact Us" title="Let's Discuss Your Project!" />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="Get in Touch with Our Team"
+    subtitle="We're excited to hear about your project needs and explore how Emathrix Technologies can help you achieve your technology goals."
     inputs={[
       {
         type: 'text',
@@ -29,49 +30,63 @@ const metadata = {
         name: 'email',
         label: 'Email',
       },
+      {
+        type: 'text',
+        name: 'company',
+        label: 'Company',
+      },
+      {
+        type: 'tel',
+        name: 'phone',
+        label: 'Phone (optional)',
+      },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Project Details',
+      placeholder: 'Tell us about your project, requirements, and goals...',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'By submitting this form, you agree to our privacy policy and consent to being contacted regarding your inquiry.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Our team typically responds within 24 business hours."
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="How Can We Help You?"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'New Project Inquiries',
+        description: `Contact us to discuss your new software development project, technology requirements, and how our team can help bring your vision to life.`,
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Contact sales',
+        title: 'Technical Support',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+          'Existing clients can reach out for technical support, maintenance requests, or questions about your current solutions.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Technical support',
+        title: 'Partnership Opportunities',
         description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+          'Interested in partnering with Emathrix? Contact us to explore potential collaboration opportunities and strategic alliances.',
+        icon: 'tabler:handshake',
       },
       {
         title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
+        description: '+1 (555) 123-4567',
+        icon: 'tabler:phone',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'contact@emathrix.com',
         icon: 'tabler:mail',
       },
       {
         title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        description: '123 Tech Plaza, Suite 500, San Francisco, CA 94105',
         icon: 'tabler:map-pin',
       },
     ]}

@@ -7,7 +7,8 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'About Emathrix Technologies',
+  description: 'Learn about our company history, values, and the talented team behind our innovative technology solutions.',
 };
 ---
 
@@ -15,61 +16,59 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="About Us"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Emathrix Technologies Team',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+      Transforming businesses through <br />
+      <span class="text-accent dark:text-white highlight">Innovative Technology Solutions</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      Founded in 2013, Emathrix Technologies has been at the forefront of digital innovation, helping businesses across various industries leverage technology to achieve their goals. Our team of experts combines technical excellence with deep industry knowledge to deliver solutions that drive real business value.
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Emathrix by the Numbers"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Projects Completed', amount: '150+' },
+      { title: 'Talented Professionals', amount: '25+' },
+      { title: 'Client Success Stories', amount: '50+' },
+      { title: 'Years in Business', amount: '10+' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Our Expertise"
+    subtitle="At Emathrix Technologies, we specialize in a wide range of technologies and solutions that help businesses navigate the digital landscape and achieve their strategic objectives."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Software Development',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+          'Custom application development using the latest technologies and frameworks to create scalable, secure, and high-performance solutions.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Interior Design',
+        title: 'AI & Machine Learning',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+          'Advanced AI solutions that help businesses automate processes, gain insights from data, and create intelligent applications.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Photography',
+        title: 'Cloud Engineering',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+          'Expertise in AWS, Azure, and Google Cloud for designing, deploying, and managing cloud infrastructure that scales with your business.',
+        icon: 'tabler:cloud',
       },
     ]}
   />
@@ -81,68 +80,68 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Mobile Development',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+          'Native and cross-platform mobile applications that deliver exceptional user experiences across iOS and Android devices.',
+        icon: 'tabler:device-mobile',
       },
       {
-        title: 'Blog',
+        title: 'Web Development',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
+          'Modern, responsive, and accessible web applications that engage users and drive business growth.',
+        icon: 'tabler:world',
       },
       {
-        title: 'Business',
+        title: 'DevOps',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
+          'Streamlined software delivery through continuous integration, continuous deployment, and infrastructure automation.',
+        icon: 'tabler:refresh',
       },
       {
-        title: 'Branding',
+        title: 'UI/UX Design',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
+          'User-centered design that combines aesthetics with functionality to create intuitive and engaging digital experiences.',
+        icon: 'tabler:palette',
       },
       {
-        title: 'Medical',
+        title: 'Cybersecurity',
         description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
+          'Comprehensive security solutions to protect your applications, data, and infrastructure from evolving threats.',
+        icon: 'tabler:lock',
       },
       {
-        title: 'Fashion Design',
+        title: 'Data Analytics',
         description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+          'Transform raw data into actionable insights that drive business decisions and strategic planning.',
+        icon: 'tabler:chart-pie',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Team collaboration',
     }}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="Our Core Values"
+    subtitle="Our values guide everything we do at Emathrix Technologies. They define our culture, shape our decisions, and help us deliver exceptional results for our clients."
     items={[
       {
-        title: 'Customer-centric approach',
+        title: 'Excellence in Everything',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'We strive for excellence in every aspect of our work, from code quality to client communication. We believe that attention to detail and commitment to best practices are essential for delivering outstanding results.',
       },
       {
-        title: 'Constant Improvement',
+        title: 'Innovation and Continuous Learning',
         description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+          'Technology never stands still, and neither do we. Our team is passionate about continuous learning, exploring new technologies, and finding innovative solutions to complex problems.',
       },
       {
-        title: 'Ethical Practices',
+        title: 'Client Partnership',
         description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'We view our clients as partners in success. We take the time to understand their business objectives, challenges, and vision to deliver solutions that truly address their needs and exceed expectations.',
       },
     ]}
   />
@@ -150,30 +149,32 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    title="Our Approach"
+    subtitle="We follow a systematic and collaborative approach to ensure project success and deliver solutions that align with our clients' goals and objectives."
     isReversed={true}
-    callToAction={{
-      text: 'See more',
-      href: '/',
-    }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
+        title: 'Understand',
+        description: 'We begin by deeply understanding your business needs, goals, and challenges to establish a clear project vision.',
+        icon: 'tabler:search',
       },
       {
-        title: 'Positive customer feedback and reviews',
+        title: 'Strategize',
         description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
+          'We develop a comprehensive strategy and roadmap that outlines how technology can address your specific challenges and achieve your objectives.',
+        icon: 'tabler:map',
       },
       {
-        title: 'Awards and recognition as industry experts',
+        title: 'Execute',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
+          'Our agile development process ensures transparent communication, regular progress updates, and the flexibility to adapt to changing requirements.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Support',
+        description:
+          'We provide ongoing support and maintenance to ensure your technology solutions continue to deliver value long after the initial deployment.',
+        icon: 'tabler:lifebuoy',
       },
     ]}
   />
@@ -181,25 +182,33 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
+    title="Our Leadership Team"
+    tagline="Meet the Team"
+    columns={3}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+        title: 'John Smith',
+        description: 'Chief Executive Officer',
+        image: {
+          src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'John Smith',
+        },
       },
       {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+        title: 'Sarah Johnson',
+        description: 'Chief Technology Officer',
+        image: {
+          src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Sarah Johnson',
+        },
       },
       {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+        title: 'Michael Chen',
+        description: 'Chief Operating Officer',
+        image: {
+          src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Michael Chen',
+        },
       },
     ]}
   />
@@ -207,21 +216,29 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Technical Support"
-    tagline="Contact us"
+    title="Get in Touch"
+    tagline="Contact Us"
     columns={2}
     items={[
       {
-        title: 'Chat with us',
+        title: 'Contact Our Team',
         description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
+          'Have questions about our services or want to discuss a potential project? Our team is ready to help you navigate your technology challenges.',
         icon: 'tabler:messages',
+        callToAction: {
+          text: 'Contact Us',
+          href: '/contact',
+        },
       },
       {
-        title: 'Call us',
+        title: 'Join Our Team',
         description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+          'Interested in working at Emathrix Technologies? We're always looking for talented professionals who share our passion for technology and innovation.',
+        icon: 'tabler:users',
+        callToAction: {
+          text: 'View Careers',
+          href: '/careers',
+        },
       },
     ]}
   />
