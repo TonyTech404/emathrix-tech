@@ -1,7 +1,7 @@
 site:
   name: Emathrix Technologies
   site: 'https://emathrix.com'
-  base: '/'
+  base: '/emathrix-tech'
   trailingSlash: false
 
   googleSiteVerificationId: ''
