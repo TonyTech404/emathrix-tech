@@ -51,9 +51,9 @@ export const getPermalink = (slug = '', type = 'page'): string => {
     return slug;
   }
 
-  // If it's a fragment identifier, we need to make sure it gets the base path
+  // If it's a fragment identifier, return it as is
   if (slug.startsWith('#')) {
-    return createPath(BASE_PATHNAME) + slug;
+    return slug;
   }
 
   switch (type) {

@@ -1,44 +1,63 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Get all links that have a hash
-    const links = document.querySelectorAll('a[href^="#"]');
+    const basePath = '/emathrix-tech';
+    const isGitHubPages = window.location.hostname === 'tonytech404.github.io';
+    
+    // Get all links
+    const links = document.querySelectorAll('a');
     
     links.forEach(link => {
       link.addEventListener('click', (e) => {
-        e.preventDefault();
-        
-        const targetId = link.getAttribute('href');
-        if (!targetId || targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (!targetElement) return;
-        
-        window.scrollTo({
-          top: targetElement.offsetTop - 80, // Adjust for header height
-          behavior: 'smooth'
-        });
-        
-        // Update URL without refreshing, including the base path for GitHub Pages
-        const basePath = '/emathrix-tech'; // Add your base path here
-        const newUrl = window.location.pathname.includes(basePath) 
-          ? `${basePath}${targetId}`  // If we're on GitHub Pages
-          : targetId;                  // If we're on localhost
-        
-        history.pushState(null, '', newUrl);
+        const href = link.getAttribute('href');
+        if (!href) return;
+
+        // Handle hash-only links (#services, #about, etc.)
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const targetElement = document.querySelector(href);
+          if (!targetElement) return;
+          
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Update URL with correct base path
+          const newUrl = isGitHubPages ? `${basePath}/${href}` : href;
+          history.pushState(null, '', newUrl);
+          return;
+        }
+
+        // Handle full URLs with hash
+        if (href.includes('#')) {
+          const url = new URL(href, window.location.origin);
+          const hash = url.hash;
+          
+          if (hash) {
+            e.preventDefault();
+            const targetElement = document.querySelector(hash);
+            if (!targetElement) return;
+            
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        }
       });
     });
 
     // Handle initial hash in URL
     if (window.location.hash) {
-      const targetElement = document.querySelector(window.location.hash);
-      if (targetElement) {
-        setTimeout(() => {
+      setTimeout(() => {
+        const targetElement = document.querySelector(window.location.hash);
+        if (targetElement) {
           window.scrollTo({
             top: targetElement.offsetTop - 80,
             behavior: 'smooth'
           });
-        }, 100);
-      }
+        }
+      }, 100);
     }
   });
 </script> 
