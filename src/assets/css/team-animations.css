@@ -103,3 +103,13 @@
 .card-back .contact-button {
   animation: pulse 2s infinite;
 }
+
+/* Add proper scroll margin for sections */
+section[id] {
+  scroll-margin-top: 100px; /* Increased margin to account for fixed header */
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section scroll margin */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
 @layer utilities {
   .bg-page {
     background-color: var(--aw-color-bg-page);
