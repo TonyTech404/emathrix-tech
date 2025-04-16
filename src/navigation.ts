@@ -4,34 +4,34 @@ export const headerData = {
   links: [
     {
       text: 'Home',
-      href: getPermalink('#home'),
+      href: '/emathrix-tech/#home',
     },
     {
       text: 'Services',
-      href: getPermalink('#services'),
+      href: '/emathrix-tech/#services',
     },
     {
       text: 'About',
-      href: getPermalink('#about'),
+      href: '/emathrix-tech/#about',
     },
     {
       text: 'Process',
-      href: getPermalink('#process'),
+      href: '/emathrix-tech/#process',
     },
     {
       text: 'Team',
-      href: getPermalink('#team'),
+      href: '/emathrix-tech/#team',
     },
     {
       text: 'FAQ',
-      href: getPermalink('#faq'),
+      href: '/emathrix-tech/#faq',
     },
     {
       text: 'Contact',
-      href: getPermalink('#contact'),
+      href: '/emathrix-tech/#contact',
     },
   ],
-  actions: [{ text: 'Get Started', href: getPermalink('#contact'), target: '_self' }],
+  actions: [{ text: 'Get Started', href: '/emathrix-tech/#contact', target: '_self' }],
 };
 
 export const footerData = {
@@ -39,28 +39,28 @@ export const footerData = {
     {
       title: 'Company',
       links: [
-        { text: 'About Us', href: getPermalink('#about') },
-        { text: 'Our Team', href: getPermalink('#team') },
-        { text: 'Our Values', href: getPermalink('#values') },
-        { text: 'Contact', href: getPermalink('#contact') },
+        { text: 'About Us', href: '/emathrix-tech/#about' },
+        { text: 'Our Team', href: '/emathrix-tech/#team' },
+        { text: 'Our Values', href: '/emathrix-tech/#values' },
+        { text: 'Contact', href: '/emathrix-tech/#contact' },
       ],
     },
     {
       title: 'Services',
       links: [
-        { text: 'Software Development', href: getPermalink('#services') },
-        { text: 'AI & Machine Learning', href: getPermalink('#services') },
-        { text: 'Mobile Development', href: getPermalink('#services') },
-        { text: 'Cloud Solutions', href: getPermalink('#services') },
-        { text: 'Digital Transformation', href: getPermalink('#services') },
+        { text: 'Software Development', href: '/emathrix-tech/#services' },
+        { text: 'AI & Machine Learning', href: '/emathrix-tech/#services' },
+        { text: 'Mobile Development', href: '/emathrix-tech/#services' },
+        { text: 'Cloud Solutions', href: '/emathrix-tech/#services' },
+        { text: 'Digital Transformation', href: '/emathrix-tech/#services' },
       ],
     },
     {
       title: 'Support',
       links: [
-        { text: 'FAQ', href: getPermalink('#faq') },
-        { text: 'Contact Us', href: getPermalink('#contact') },
-        { text: 'Our Process', href: getPermalink('#process') },
+        { text: 'FAQ', href: '/emathrix-tech/#faq' },
+        { text: 'Contact Us', href: '/emathrix-tech/#contact' },
+        { text: 'Our Process', href: '/emathrix-tech/#process' },
       ],
     },
     {
