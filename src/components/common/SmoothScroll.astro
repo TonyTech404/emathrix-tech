@@ -18,9 +18,27 @@
           behavior: 'smooth'
         });
         
-        // Update URL without refreshing
-        history.pushState(null, '', targetId);
+        // Update URL without refreshing, including the base path for GitHub Pages
+        const basePath = '/emathrix-tech'; // Add your base path here
+        const newUrl = window.location.pathname.includes(basePath) 
+          ? `${basePath}${targetId}`  // If we're on GitHub Pages
+          : targetId;                  // If we're on localhost
+        
+        history.pushState(null, '', newUrl);
       });
     });
+
+    // Handle initial hash in URL
+    if (window.location.hash) {
+      const targetElement = document.querySelector(window.location.hash);
+      if (targetElement) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    }
   });
 </script> 
