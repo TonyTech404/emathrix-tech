@@ -4,34 +4,34 @@ export const headerData = {
   links: [
     {
       text: 'Home',
-      href: '#home',
+      href: getPermalink('#home'),
     },
     {
       text: 'Services',
-      href: '#services',
+      href: getPermalink('#services'),
     },
     {
       text: 'About',
-      href: '#about',
+      href: getPermalink('#about'),
     },
     {
       text: 'Process',
-      href: '#process',
+      href: getPermalink('#process'),
     },
     {
       text: 'Team',
-      href: '#team',
+      href: getPermalink('#team'),
     },
     {
       text: 'FAQ',
-      href: '#faq',
+      href: getPermalink('#faq'),
     },
     {
       text: 'Contact',
-      href: '#contact',
+      href: getPermalink('#contact'),
     },
   ],
-  actions: [{ text: 'Get Started', href: '#contact', target: '_self' }],
+  actions: [{ text: 'Get Started', href: getPermalink('#contact'), target: '_self' }],
 };
 
 export const footerData = {
@@ -39,28 +39,28 @@ export const footerData = {
     {
       title: 'Company',
       links: [
-        { text: 'About Us', href: '#about' },
-        { text: 'Our Team', href: '#team' },
-        { text: 'Our Values', href: '#values' },
-        { text: 'Contact', href: '#contact' },
+        { text: 'About Us', href: getPermalink('#about') },
+        { text: 'Our Team', href: getPermalink('#team') },
+        { text: 'Our Values', href: getPermalink('#values') },
+        { text: 'Contact', href: getPermalink('#contact') },
       ],
     },
     {
       title: 'Services',
       links: [
-        { text: 'Software Development', href: '#services' },
-        { text: 'AI & Machine Learning', href: '#services' },
-        { text: 'Mobile Development', href: '#services' },
-        { text: 'Cloud Solutions', href: '#services' },
-        { text: 'Digital Transformation', href: '#services' },
+        { text: 'Software Development', href: getPermalink('#services') },
+        { text: 'AI & Machine Learning', href: getPermalink('#services') },
+        { text: 'Mobile Development', href: getPermalink('#services') },
+        { text: 'Cloud Solutions', href: getPermalink('#services') },
+        { text: 'Digital Transformation', href: getPermalink('#services') },
       ],
     },
     {
       title: 'Support',
       links: [
-        { text: 'FAQ', href: '#faq' },
-        { text: 'Contact Us', href: '#contact' },
-        { text: 'Our Process', href: '#process' },
+        { text: 'FAQ', href: getPermalink('#faq') },
+        { text: 'Contact Us', href: getPermalink('#contact') },
+        { text: 'Our Process', href: getPermalink('#process') },
       ],
     },
     {
