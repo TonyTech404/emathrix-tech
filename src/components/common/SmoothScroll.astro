@@ -1,0 +1,26 @@
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get all links that have a hash
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const targetId = link.getAttribute('href');
+        if (!targetId || targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (!targetElement) return;
+        
+        window.scrollTo({
+          top: targetElement.offsetTop - 80, // Adjust for header height
+          behavior: 'smooth'
+        });
+        
+        // Update URL without refreshing
+        history.pushState(null, '', targetId);
+      });
+    });
+  });
+</script> 
