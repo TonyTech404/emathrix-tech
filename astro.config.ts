@@ -23,13 +23,13 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   site: 'https://TonyTech404.github.io',
-  base: '/emathrix-tech/',
+  base: '/emathrix-tech',
   output: 'static',
-  trailingSlash: 'always',
+  trailingSlash: 'never',
   build: {
     assets: 'astro',
   },
-  outDir: './docs',
+  outDir: './dist',
 
   integrations: [
     tailwind({
