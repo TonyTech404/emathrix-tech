@@ -29,6 +29,7 @@ export default defineConfig({
   build: {
     assets: 'astro',
   },
+  outDir: './docs',
 
   integrations: [
     tailwind({
