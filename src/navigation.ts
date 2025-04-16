@@ -4,34 +4,34 @@ export const headerData = {
   links: [
     {
       text: 'Home',
-      href: getPermalink('#home'),
+      href: '#home',
     },
     {
       text: 'Services',
-      href: getPermalink('#services'),
+      href: '#services',
     },
     {
       text: 'About',
-      href: getPermalink('#about'),
+      href: '#about',
     },
     {
       text: 'Process',
-      href: getPermalink('#process'),
+      href: '#process',
     },
     {
       text: 'Team',
-      href: getPermalink('#team'),
+      href: '#team',
     },
     {
       text: 'FAQ',
-      href: getPermalink('#faq'),
+      href: '#faq',
     },
     {
       text: 'Contact',
-      href: getPermalink('#contact'),
+      href: '#contact',
     },
   ],
-  actions: [{ text: 'Get Started', href: getPermalink('#contact'), target: '_self' }],
+  actions: [{ text: 'Get Started', href: '#contact', target: '_self' }],
 };
 
 export const footerData = {
@@ -39,28 +39,28 @@ export const footerData = {
     {
       title: 'Company',
       links: [
-        { text: 'About Us', href: getPermalink('#about') },
-        { text: 'Our Team', href: getPermalink('#team') },
-        { text: 'Our Values', href: getPermalink('#values') },
-        { text: 'Contact', href: getPermalink('#contact') },
+        { text: 'About Us', href: '#about' },
+        { text: 'Our Team', href: '#team' },
+        { text: 'Our Values', href: '#values' },
+        { text: 'Contact', href: '#contact' },
       ],
     },
     {
       title: 'Services',
       links: [
-        { text: 'Software Development', href: getPermalink('#services') },
-        { text: 'AI & Machine Learning', href: getPermalink('#services') },
-        { text: 'Mobile Development', href: getPermalink('#services') },
-        { text: 'Cloud Solutions', href: getPermalink('#services') },
-        { text: 'Digital Transformation', href: getPermalink('#services') },
+        { text: 'Software Development', href: '#services' },
+        { text: 'AI & Machine Learning', href: '#services' },
+        { text: 'Mobile Development', href: '#services' },
+        { text: 'Cloud Solutions', href: '#services' },
+        { text: 'Digital Transformation', href: '#services' },
       ],
     },
     {
       title: 'Support',
       links: [
-        { text: 'FAQ', href: getPermalink('#faq') },
-        { text: 'Contact Us', href: getPermalink('#contact') },
-        { text: 'Our Process', href: getPermalink('#process') },
+        { text: 'FAQ', href: '#faq' },
+        { text: 'Contact Us', href: '#contact' },
+        { text: 'Our Process', href: '#process' },
       ],
     },
     {
