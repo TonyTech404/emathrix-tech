@@ -5,6 +5,7 @@ This is the repository for the Emathrix Technologies website built with AstroWin
 ## Project Overview
 
 The website is built with:
+
 - **[Astro 5.0](https://astro.build/)**: A modern static site builder
 - **[Tailwind CSS](https://tailwindcss.com/)**: For utility-first styling
 - SEO optimized structure
@@ -21,17 +22,20 @@ The website is built with:
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd astrowind
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -48,6 +52,7 @@ The project uses the following branch structure:
 ## Development Workflow
 
 1. Create a feature branch from `main` for any new work:
+
    ```bash
    git checkout main
    git pull
@@ -57,12 +62,14 @@ The project uses the following branch structure:
 2. Make your changes and test locally using `npm run dev`
 
 3. Commit your changes with descriptive commit messages:
+
    ```bash
    git add .
    git commit -m "Add a descriptive message about your changes"
    ```
 
 4. Push your feature branch:
+
    ```bash
    git push origin feature/your-feature-name
    ```

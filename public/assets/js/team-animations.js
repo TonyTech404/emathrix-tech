@@ -1,28 +1,28 @@
 // Team member card animation functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Select all team member cards
   const teamCards = document.querySelectorAll('#team .bg-white.dark\\:bg-slate-900.rounded-lg');
-  
+
   // Set up staggered delay for social icons animations
   const socialLinks = document.querySelectorAll('#team .flex.space-x-3 a');
   socialLinks.forEach((link, index) => {
     link.style.setProperty('--i', index);
   });
-  
+
   // Add click listeners to each card for flip effect
-  teamCards.forEach(card => {
+  teamCards.forEach((card) => {
     // Add click handler for card flip
-    card.addEventListener('click', function() {
+    card.addEventListener('click', function () {
       // Create back card content if it doesn't exist yet
       if (!this.querySelector('.card-back')) {
         const name = this.querySelector('h3').textContent;
         const role = this.querySelector('p.text-primary, p.dark\\:text-blue-400').textContent;
         const bio = this.querySelector('p.text-gray-600, p.dark\\:text-gray-400').textContent;
-        
+
         // Create the back of the card
         const backCard = document.createElement('div');
         backCard.className = 'card-back';
-        
+
         // Add content to the back card
         backCard.innerHTML = `
           <h3 class="text-xl font-bold mb-2">${name}</h3>
@@ -46,22 +46,22 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <p class="text-sm italic mt-6">Click again to flip back</p>
         `;
-        
+
         // Append the back card to the card container
         this.appendChild(backCard);
       }
-      
+
       // Toggle the flipped class
       this.classList.toggle('team-card-flipped');
     });
   });
-  
+
   // Add escape key handler to flip back all cards
-  document.addEventListener('keydown', function(e) {
+  document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
-      document.querySelectorAll('.team-card-flipped').forEach(card => {
+      document.querySelectorAll('.team-card-flipped').forEach((card) => {
         card.classList.remove('team-card-flipped');
       });
     }
   });
-}); 
+});

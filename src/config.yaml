@@ -11,7 +11,7 @@ metadata:
   title:
     default: Emathrix Technologies
     template: '%s — Emathrix Technologies'
-  description: "Innovating the digital future with smart technology solutions. Emathrix Technologies provides cutting-edge software development, AI solutions, and digital transformation services."
+  description: 'Innovating the digital future with smart technology solutions. Emathrix Technologies provides cutting-edge software development, AI solutions, and digital transformation services.'
   robots:
     index: true
     follow: true
