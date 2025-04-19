@@ -108,4 +108,94 @@ import '@fontsource-variable/inter';
   #team .bg-white.dark\:bg-slate-900.rounded-lg:hover .flex a:nth-child(2) {
     animation-delay: 0.2s;
   }
+
+  /* Animation pausing during page load */
+  .animation-paused * {
+    animation-play-state: paused !important;
+    transition: none !important;
+    -webkit-animation-play-state: paused !important;
+  }
+  
+  .animation-paused [no-intersect] {
+    visibility: hidden !important;
+  }
+  
+  /* Ensure animations play once unpaused */
+  html:not(.animation-paused) * {
+    animation-play-state: running !important;
+    -webkit-animation-play-state: running !important;
+  }
+
+  /* Fix for animations across different viewport sizes */
+  .consistent-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    will-change: opacity, transform;
+  }
+
+  .consistent-animate.animate-loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Animation delay utility classes */
+  .delay-100 { transition-delay: 100ms !important; animation-delay: 100ms !important; }
+  .delay-200 { transition-delay: 200ms !important; animation-delay: 200ms !important; }
+  .delay-300 { transition-delay: 300ms !important; animation-delay: 300ms !important; }
+  .delay-400 { transition-delay: 400ms !important; animation-delay: 400ms !important; }
+  .delay-500 { transition-delay: 500ms !important; animation-delay: 500ms !important; }
+
+  /* Force all intersect animations to be consistent */
+  [class*="intersect"], 
+  [class*="intersect:"] {
+    transition-property: all !important;
+    transition-duration: 0.5s !important;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+    will-change: transform, opacity !important;
+  }
+
+  /* Override transitions for elements with no-intersect attribute */
+  [no-intersect] {
+    opacity: 0 !important;
+    transform: translateY(20px) !important;
+    transition-delay: 0ms !important;
+  }
+
+  /* Fix for mobile/small screen animations */
+  @media (max-width: 768px) {
+    [class*="intersect"],
+    [class*="intersect:"] {
+      transition-delay: var(--delay, 200ms) !important;
+    }
+  }
+
+  /* Make sure all animations use the same base animation */
+  .intersect\:fade-up,
+  .intersect\:fade-down,
+  .intersect\:fade-left,
+  .intersect\:fade-right {
+    opacity: 1 !important;
+    transform: translate(0) !important;
+  }
+
+  [no-intersect].intersect\:fade-up {
+    transform: translateY(30px) !important;
+    opacity: 0 !important;
+  }
+
+  [no-intersect].intersect\:fade-down {
+    transform: translateY(-30px) !important;
+    opacity: 0 !important;
+  }
+
+  [no-intersect].intersect\:fade-left {
+    transform: translateX(30px) !important;
+    opacity: 0 !important;
+  }
+
+  [no-intersect].intersect\:fade-right {
+    transform: translateX(-30px) !important;
+    opacity: 0 !important;
+  }
 </style>
