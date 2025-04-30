@@ -1,16 +1,47 @@
 ---
 import { SITE } from 'astrowind:config';
 import { Image } from 'astro:assets';
-import logoImage from '~/assets/images/eMathrix_logo.png';
+import darkLogoImage from '~/assets/images/Emathrix Logo.png';
+import lightLogoImage from '~/assets/images/white_ematrix_logo.png';
 ---
 
-<div class="flex items-center">
+<div class="flex items-center logo-container">
+  <!-- Logo for light mode -->
   <Image 
-    src={logoImage} 
+    src={darkLogoImage} 
     alt={SITE?.name || 'eMathrix TECHNOLOGIES'} 
-    class="w-auto h-10 sm:h-12" 
-    width={200} 
-    height={50} 
+    class="w-auto h-16 sm:h-20 block dark:hidden" 
+    width={300} 
+    height={75} 
+    loading="eager"
+  />
+  
+  <!-- Logo for dark mode -->
+  <Image 
+    src={lightLogoImage} 
+    alt={SITE?.name || 'eMathrix TECHNOLOGIES'} 
+    class="w-auto h-16 sm:h-20 hidden dark:block" 
+    width={300} 
+    height={75} 
     loading="eager"
   />
 </div>
+
+<style>
+  .logo-container {
+    position: relative;
+  }
+
+  .logo-wrapper {
+    position: relative;
+    border-radius: 8px;
+    padding: 2px 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Add a subtle background in dark mode */
+  :global(.dark) .logo-wrapper {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+  }
+</style>
