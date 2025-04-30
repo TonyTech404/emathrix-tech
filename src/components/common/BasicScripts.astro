@@ -165,9 +165,9 @@ import { UI } from 'astrowind:config';
   /* Inspired by: https://github.com/heidkaemper/tailwindcss-intersect */
   const Observer = {
     observer: null,
-    delayBetweenAnimations: 80,
+    delayBetweenAnimations: 20,
     animationCounter: 0,
-    initialDelay: 250,
+    initialDelay: 50,
     forceSequentialAnimation: true,
 
     start() {
@@ -250,7 +250,7 @@ import { UI } from 'astrowind:config';
 
       this.observer = new IntersectionObserver(callback.bind(this), { 
         threshold: [0, 0.25, 0.5, 0.99],
-        rootMargin: '0px 0px -10% 0px'
+        rootMargin: '0px 0px -5% 0px'
       });
 
       elements.forEach((el) => {
@@ -262,13 +262,13 @@ import { UI } from 'astrowind:config';
   window.addEventListener('load', () => {
     setTimeout(() => {
       Observer.start();
-    }, 50);
+    }, 10);
   });
 
   document.addEventListener('astro:after-swap', () => {
     setTimeout(() => {
       Observer.start();
-    }, 50);
+    }, 10);
   });
 </script>
 
@@ -283,9 +283,9 @@ import { UI } from 'astrowind:config';
         // Add staggered animation
         setTimeout(() => {
           el.classList.add('animate-loaded');
-        }, 100 + (index * 100)); // 100ms base delay + 100ms per element
+        }, 50 + (index * 30)); // 50ms base delay + 30ms per element
       });
-    }, 200);
+    }, 50);
   });
 
   // Reapply animations after navigation
@@ -300,9 +300,9 @@ import { UI } from 'astrowind:config';
       animateElements.forEach((el, index) => {
         setTimeout(() => {
           el.classList.add('animate-loaded');
-        }, 100 + (index * 100));
+        }, 50 + (index * 30));
       });
-    }, 200);
+    }, 50);
   });
 </script>
 
@@ -315,7 +315,7 @@ import { UI } from 'astrowind:config';
     // Give a bit of extra time for browser to settle
     setTimeout(() => {
       document.documentElement.classList.remove('animation-paused');
-    }, 150);
+    }, 30);
   });
   
   // Handle navigation transitions
@@ -326,6 +326,6 @@ import { UI } from 'astrowind:config';
   document.addEventListener('astro:after-swap', () => {
     setTimeout(() => {
       document.documentElement.classList.remove('animation-paused');
-    }, 150);
+    }, 30);
   });
 </script>
