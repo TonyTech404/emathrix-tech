@@ -14,7 +14,8 @@ import droneImage from '~/assets/images/drone_bg1.jpg';
 import florenceImage from '~/assets/images/florence.png';
 import larieImage from '~/assets/images/larie.png';
 import anthonyImage from '~/assets/images/anthony.png';
-import jordanImage from '~/assets/images/Jordan.png';
+import rommelImage from '~/assets/images/rommel (1).png';
+import kwayGoLogo from '~/assets/images/KwayGo Logo.png';
 
 const metadata = {
   title: 'Emathrix Technologies - Innovative Software Solutions',
@@ -218,27 +219,17 @@ const metadata = {
           <div
             class="p-4 rounded-full bg-indigo-100 dark:bg-indigo-900/30 w-16 h-16 mb-6 flex items-center justify-center"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10 text-indigo-600 dark:text-indigo-400"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
-              <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
-            </svg>
+            <img 
+              src={kwayGoLogo.src} 
+              alt="KwayGo Logo" 
+              class="h-12 w-12 object-contain"
+              width={kwayGoLogo.width}
+              height={kwayGoLogo.height}
+            />
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Tutor Connect Platform</h3>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">KwayGo</h3>
           <p class="text-gray-600 dark:text-gray-400">
-            An educational platform connecting students with qualified tutors for in-person and online learning,
-            featuring profile management, booking, and scheduling.
+            Our innovative tutoring platform where qualified tutors can create detailed profiles highlighting their specialties (e.g., Mathematics 1-6), rates, and location. Parents can easily browse and book sessions through the app, connecting students with the perfect learning match.
           </p>
           <a href="#contact" class="inline-flex items-center mt-6 text-indigo-600 dark:text-indigo-400 font-medium">
             Learn more
@@ -494,10 +485,10 @@ const metadata = {
   <Stats
     title="Emathrix by the Numbers"
     stats={[
-      { title: 'Projects Completed', amount: '150+' },
-      { title: 'Satisfied Clients', amount: '50+' },
-      { title: 'Team Members', amount: '25+' },
-      { title: 'Years of Experience', amount: '10+' },
+      { title: 'Projects Completed', amount: '5+' },
+      { title: 'Active Development', amount: '2' },
+      { title: 'Team Members', amount: '4' },
+      { title: 'Tech Partners', amount: '3+' },
     ]}
   />
 
@@ -638,34 +629,25 @@ const metadata = {
       >
         <img
           src={florenceImage.src}
-          alt="Florence Adhiambo"
+          alt="Florante Sangrenes"
           class="w-full h-64 object-cover object-top transition-transform duration-300"
           width={florenceImage.width}
           height={florenceImage.height}
         />
         <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white">Florence Adhiambo</h3>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white">Florante Sangrenes</h3>
           <p class="text-primary dark:text-blue-400 font-medium mb-3">Chief Executive Officer</p>
           <p class="text-gray-600 dark:text-gray-400 mb-4">
-            Florence leads Emathrix with over 8 years of experience in software development and AI solutions, bringing
-            innovative vision to our product strategy.
+            Florante leads Emathrix with a strong background in technology leadership and innovation, driving our vision and strategic direction to deliver cutting-edge solutions.
           </p>
           <div class="flex space-x-3">
-            <a href="#" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
+            <a href="https://www.linkedin.com/in/florence-sangrenes-5b92a020/" target="_blank" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
               <span class="sr-only">LinkedIn</span>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path
                   fill-rule="evenodd"
                   d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
                   clip-rule="evenodd"></path>
-              </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
-              <span class="sr-only">Twitter</span>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path
-                  d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
-                ></path>
               </svg>
             </a>
           </div>
@@ -687,25 +669,15 @@ const metadata = {
           <h3 class="text-xl font-bold text-gray-900 dark:text-white">Mark Anthony Hernandez</h3>
           <p class="text-primary dark:text-blue-400 font-medium mb-3">Chief Technology Officer</p>
           <p class="text-gray-600 dark:text-gray-400 mb-4">
-            Mark leads our engineering team, bringing expertise in AI, computer vision, and robotics to drive our
-            product development.
+            Mark brings exceptional expertise in data engineering and cloud infrastructure with a vision-driven approach to technology leadership. He orchestrates our technical strategy and architectural decisions.
           </p>
           <div class="flex space-x-3">
-            <a href="#" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
+            <a href="https://www.linkedin.com/in/mark-anthony-hernandez-0b2242242/" target="_blank" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
               <span class="sr-only">LinkedIn</span>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path
                   fill-rule="evenodd"
                   d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
-              <span class="sr-only">GitHub</span>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                   clip-rule="evenodd"></path>
               </svg>
             </a>
@@ -728,64 +700,47 @@ const metadata = {
           <h3 class="text-xl font-bold text-gray-900 dark:text-white">Larie Amimirog</h3>
           <p class="text-primary dark:text-blue-400 font-medium mb-3">Chief Data Officer</p>
           <p class="text-gray-600 dark:text-gray-400 mb-4">
-            Specialized in machine learning and big data, Larie oversees our data strategy and AI model development.
+            With expertise in data science and analytics, Larie drives our data strategy and ensures our AI models are accurate, efficient, and reliable for critical infrastructure analysis.
           </p>
           <div class="flex space-x-3">
-            <a href="#" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
+            <a href="https://www.linkedin.com/in/amimirog/" target="_blank" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
               <span class="sr-only">LinkedIn</span>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path
                   fill-rule="evenodd"
                   d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
                   clip-rule="evenodd"></path>
-              </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
-              <span class="sr-only">Twitter</span>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path
-                  d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
-                ></path>
               </svg>
             </a>
           </div>
         </div>
       </div>
 
-      <!-- CMO -->
+      <!-- Lead Engineer -->
       <div
         class="bg-white dark:bg-slate-900 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
       >
         <img
-          src={jordanImage.src}
-          alt="Jien Rivero Jordan"
+          src={rommelImage.src}
+          alt="John Rommel Octaviano"
           class="w-full h-64 object-cover object-center transition-transform duration-300"
-          width={jordanImage.width}
-          height={jordanImage.height}
+          width={rommelImage.width}
+          height={rommelImage.height}
         />
         <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white">Jien Rivero Jordan</h3>
-          <p class="text-primary dark:text-blue-400 font-medium mb-3">Chief Manufacturing Officer</p>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white">John Rommel Octaviano</h3>
+          <p class="text-primary dark:text-blue-400 font-medium mb-3">Lead Engineer</p>
           <p class="text-gray-600 dark:text-gray-400 mb-4">
-            Jien manages our hardware development, drone assembly, and quality control processes for reliable product
-            delivery.
+            Rommel oversees our engineering team, bringing extensive experience in software development and system architecture to ensure our solutions are robust, scalable, and user-friendly.
           </p>
           <div class="flex space-x-3">
-            <a href="#" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
+            <a href="https://www.linkedin.com/in/ctvnjhnrmmlp/" target="_blank" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
               <span class="sr-only">LinkedIn</span>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path
                   fill-rule="evenodd"
                   d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
                   clip-rule="evenodd"></path>
-              </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-blue-500 dark:text-gray-400 dark:hover:text-white">
-              <span class="sr-only">Twitter</span>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path
-                  d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
-                ></path>
               </svg>
             </a>
           </div>
@@ -1133,7 +1088,7 @@ const metadata = {
                 </div>
                 <div class="ml-3">
                   <p class="text-sm font-medium text-gray-900 dark:text-white">Phone</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">+1 (555) 123-4567</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">+63 976 4555 771</p>
                 </div>
               </div>
               <div class="flex items-start">
@@ -1154,7 +1109,7 @@ const metadata = {
                 </div>
                 <div class="ml-3">
                   <p class="text-sm font-medium text-gray-900 dark:text-white">Email</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">contact@emathrix.com</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">info@emathrix.com</p>
                 </div>
               </div>
               <div class="flex items-start">
@@ -1180,7 +1135,7 @@ const metadata = {
                 <div class="ml-3">
                   <p class="text-sm font-medium text-gray-900 dark:text-white">Location</p>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
-                    123 Tech Plaza, Suite 500<br />Binan City, Laguna
+                    Biñan City, Laguna
                   </p>
                 </div>
               </div>

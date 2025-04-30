@@ -182,7 +182,7 @@ import { UI } from 'astrowind:config';
       ];
 
       this.animationCounter = 0;
-      
+
       const elements = Array.from(document.querySelectorAll(selectors.join(',')));
       
       elements.sort((a, b) => {
@@ -230,7 +230,7 @@ import { UI } from 'astrowind:config';
                 target.setAttribute('data-animated', 'true');
 
                 const delay = this.initialDelay + (animationIndex * this.delayBetweenAnimations);
-                
+
                 target.style.transitionDelay = `${delay}ms`;
                 target.style.animationDelay = `${delay}ms`;
 
@@ -261,13 +261,13 @@ import { UI } from 'astrowind:config';
 
   window.addEventListener('load', () => {
     setTimeout(() => {
-      Observer.start();
+  Observer.start();
     }, 10);
   });
 
   document.addEventListener('astro:after-swap', () => {
     setTimeout(() => {
-      Observer.start();
+    Observer.start();
     }, 10);
   });
 </script>
